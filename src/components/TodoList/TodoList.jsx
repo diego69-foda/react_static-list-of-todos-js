@@ -1,5 +1,9 @@
 import { TodoInfo } from '../TodoInfo/TodoInfo';
 
-export const TodoList = (todos, users) => (
-  <TodoInfo todos={todos} users={users} />
+export const TodoList = ({ todos, users }) => (
+  <>
+    {todos.map(todo => (
+      <TodoInfo key={todo.id} todos={todo} users={users} />
+    ))}
+  </>
 );
