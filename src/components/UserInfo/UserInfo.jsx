@@ -1,5 +1,5 @@
-export const UserInfo = (todos, users) => (
-  <a className="UserInfo" href="mailto:Sincere@april.biz">
-    {users[todos.userId - 1].name}
+export const UserInfo = (todo, users) => (
+  <a className="UserInfo" href={users.email}>
+    {users.name}
   </a>
 );

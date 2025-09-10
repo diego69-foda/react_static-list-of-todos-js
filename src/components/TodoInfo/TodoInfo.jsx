@@ -1,10 +1,10 @@
 import { UserInfo } from '../UserInfo/UserInfo';
 
-export const TodoInfo = (todos, users) => (
+export const TodoInfo = ({ todo }) => (
   <section className="TodoList">
     <article className="TodoInfo TodoInfo--completed">
-      <h2 className="TodoInfo__title">{todos.title}</h2>
-      <UserInfo todos={todos} users={users} />
+      <h2 className="TodoInfo__title">{todo.title}</h2>
+      <UserInfo todos={todo} />
     </article>
   </section>
 );
